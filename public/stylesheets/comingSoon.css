@@ -1,0 +1,89 @@
+
+
+@media only screen and (max-width:480px) {
+
+    .pageHeaderIcon1080 {
+        display:none;
+    }
+
+    .pageHeaderIconPhone{
+        max-height: 140%;
+        max-width: 100%;        /*height start 52em*/
+
+        @media only screen and (max-aspect-ratio:0.485) and (min-aspect-ratio: 0.481) {
+            height: 58em;
+
+        }
+
+        @media only screen and (max-aspect-ratio:0.480) and (min-aspect-ratio: 0.476) {
+            height: 57em;
+        }
+
+
+        @media only screen and (max-aspect-ratio:0.475) and (min-aspect-ratio: 0.471) {
+            height: 49em;
+        }
+
+
+        @media only screen and  (max-aspect-ratio:0.470) and (min-aspect-ratio: 0.466) {
+            height: 55em;
+        }
+
+
+
+        @media only screen and (max-aspect-ratio:0.465) and (min-aspect-ratio: 0.461) {
+            height: 56em;
+        }
+
+
+        @media only screen and (max-aspect-ratio:0.460) and (min-aspect-ratio: 0.456) {
+            height: 53em;
+        }
+
+
+        @media only screen and (max-aspect-ratio:0.455) {
+            height: 58em;
+        }
+
+
+    }
+
+}
+@media only screen and (min-width:481px) {
+    .pageHeaderIconPhone {
+        display:none;
+    }
+    .pageHeaderIcon1080{
+        width: 100%;
+
+        /*1080*/
+        @media (min-resolution: 1dppx){
+            max-height: 1080px;
+            height: 960px;
+        }
+        @media (min-resolution: 1.25dppx) {
+            max-height: 1080px;
+            height: 735px;
+        }
+
+
+
+        /*mdpi*/
+        @media (1080px <= width <= 1280px ){
+            /*touch laptop*/
+            @media (width: 1280px) and (min-height:950px ) {
+                height: 60em;
+            }
+            height: 53em;
+
+        }
+
+        /*hdpi*/
+        @media (1281px <= width <= 1440px){
+            height: 57em;
+        }
+
+
+
+    }
+}
