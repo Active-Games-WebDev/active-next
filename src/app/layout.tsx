@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import React from "react";
 
-import GlobalGrid from "../../public/stylesheets/globalGrid.css"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +31,7 @@ export default function RootLayout({
       <link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" rel="stylesheet"/>
       {/*pure grids responsive*/}
 
-      <link href={GlobalGrid} rel="stylesheet"/>
+      <link href="./stylesheets/globalGrid.css" rel="stylesheet"/>
       <link href="./stylesheets/comingSoon.css" rel="stylesheet"/>
 
 
