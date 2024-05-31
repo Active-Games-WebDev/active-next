@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "./header/header";
-import ComingSoon from "./comingSoon/comingSoon";
+import Header from "../header/header";
 
 
 
@@ -25,19 +24,9 @@ export default function App() {
 
           <link href="./src/app/resources/fonts/Avenir-Light.ttf" rel="stylesheet"/>
 
-
-          <link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" rel="stylesheet"/>
-          {/*pure responsive*/}
-          <link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" rel="stylesheet"/>
-          {/*pure grids responsive*/}
-          <link href="/stylesheets/globalGrid.css" rel="stylesheet"/>
-          <link href="/stylesheets/comingSoon.css" rel="stylesheet"/>
-
-
       </head>
       <body>
-      <ComingSoon/>
-
+      <Header/>
       </body>
       </html>
   )

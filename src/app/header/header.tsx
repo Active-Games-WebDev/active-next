@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 export default function App() {
   return (
@@ -21,13 +20,7 @@ export default function App() {
           <link href="./src/app/resources/fonts/Avenir-Light.ttf" rel="font"/>
 
           <link href="./src/app/resources/fonts/Avenir-Light.ttf" rel="stylesheet"/>
-
-
-          <link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" rel="stylesheet"/>
-          {/*pure responsive*/}
-          <link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" rel="stylesheet"/>
-          {/*pure grids responsive*/}
-
+          <link href="/stylesheets/globalGrid.css" rel="stylesheet"/>
 
       </head>
 
@@ -38,10 +31,7 @@ export default function App() {
       <div className="topnavHeader" id="topnavHeader">
           {/*icon*/}
           <div className="icon" id="icon">
-              <Image src="/resources/icons/logo-active-transp.svg"
-                     width={500}
-                     height={500}
-                     alt="Active Games Logo"/>
+            <img src="/resources/icons/logo-active-transp.png" alt ="Active Logo"/>
           </div>
 
           {/*searchbar*/}
@@ -50,10 +40,7 @@ export default function App() {
                   <input type="text" placeholder="Search.." name="search"/>
                   <button type="submit">
                       <i className="" id="fa fa-search">
-                          <Image src="/resources/icons/icons8-search.svg"
-                                 width={30}
-                                 height={30}
-                                 alt="Active Games Logo"/>
+                          <img src="/resources/icons/icons8-search.png" alt="SearchBarButton"/>
                       </i>
                   </button>
               </form>

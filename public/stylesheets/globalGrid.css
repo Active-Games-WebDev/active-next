@@ -25,7 +25,7 @@
     display: table;
 }
 
-.row1{
+[class*="row"]{
     position: absolute;
     height: fit-content;
     width: fit-content;

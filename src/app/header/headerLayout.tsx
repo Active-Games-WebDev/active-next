@@ -23,12 +23,7 @@ export default function RootLayout({
       <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
 
       <link href="./src/app/resources/fonts/Avenir-Light.ttf" rel="stylesheet"/>
-
-
-      <link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" rel="stylesheet"/>
-      {/*pure responsive*/}
-      <link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" rel="stylesheet"/>
-      {/*pure grids responsive*/}
+      <link href="/stylesheets/globalGrid.css" rel="stylesheet"/>
 
     </head>
     <body className={inter.className}>{children}</body>
