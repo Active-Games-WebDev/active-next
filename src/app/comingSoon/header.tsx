@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import GlobalGrid from "../../../public/stylesheets/globalGrid.css";
 
 export default function App() {
   return (
@@ -29,7 +28,7 @@ export default function App() {
           <link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" rel="stylesheet"/>
           {/*pure grids responsive*/}
 
-          <link href={GlobalGrid} rel="stylesheet"/>
+          <link href="./stylesheets/globalGrid.css" rel="stylesheet"/>
 
       </head>
 
