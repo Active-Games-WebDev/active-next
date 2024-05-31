@@ -1,6 +1,12 @@
 
 
 @media only screen and (max-width:480px) {
+    .wspButton{
+        display: none;
+    }
+    .wspButtonImage{
+        display: none;
+    }
 
     .pageHeaderIcon1080 {
         display:none;
@@ -48,8 +54,14 @@
 
     }
 
+
+
 }
+
+
+/*queries for pc*/
 @media only screen and (min-width:481px) {
+
     .pageHeaderIconPhone {
         display:none;
     }
@@ -85,5 +97,99 @@
 
 
 
+
     }
+
+
+    @media (min-resolution: 1dppx){
+        .wspButton{
+            position: relative;
+            left: 65%;
+            width: 120%;
+            height: auto;
+
+        }
+
+        .wspButtonImage{
+            width: 50%;
+            height: auto;
+        }
+
+        .wspButtonImage:Hover{
+            filter: opacity(80%) drop-shadow(1px 3px 24px blue);
+        }
+    }
+
+    @media (min-resolution: 1.25dppx) {
+        .wspButton{
+            position: relative;
+            left: 55%;
+            width: 120%;
+            height: auto;
+
+        }
+        .wspButtonImage{
+            width: 40%;
+            height: auto;
+        }
+        .wspButtonImage:Hover{
+            filter: opacity(80%) drop-shadow(1px 3px 24px black);
+        }
+    }
+
+    /*mdpi*/
+    @media (1080px <= width <= 1280px ){
+        .wspButton{
+            position: relative;
+            left: 45%;
+            width: 120%;
+            height: auto;
+
+        }
+        .wspButtonImage{
+            width: 40%;
+            height: auto;
+        }
+        .wspButtonImage:Hover{
+            filter: opacity(80%) drop-shadow(1px 3px 24px red);
+        }
+
+        /*touch laptop*/
+        @media (width: 1280px) and (min-height:950px ) {
+            .wspButton{
+                position: relative;
+                left: 45%;
+                width: 120%;
+                height: auto;
+
+            }
+            .wspButtonImage{
+                width: 40%;
+                height: auto;
+            }
+            .wspButtonImage:Hover{
+                filter: opacity(80%) drop-shadow(1px 3px 24px green);
+            }
+        }
+
+    }
+
+    /*hdpi*/
+    @media (1281px <= width <= 1440px){
+        .wspButton{
+            position: relative;
+            left: 55%;
+            width: 120%;
+            height: auto;
+
+        }
+        .wspButtonImage{
+            width: 40%;
+            height: auto;
+        }
+        .wspButtonImage:Hover{
+            filter: opacity(80%) drop-shadow(1px 3px 24px orangered);
+        }
+    }
+
 }

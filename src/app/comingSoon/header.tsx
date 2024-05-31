@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import GlobalGrid from "../../../public/stylesheets/globalGrid.css";
 
 export default function App() {
   return (
@@ -28,16 +29,27 @@ export default function App() {
           <link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" rel="stylesheet"/>
           {/*pure grids responsive*/}
 
+          <link href={GlobalGrid} rel="stylesheet"/>
+
       </head>
 
       <body>
       {/*header*/}
+      <div className="comingSoon" id="comingSoon">
+          <link href="./stylesheets/comingSoon.css" rel="stylesheet"/>
+          <img className="pageHeaderIcon1080" src="/resources/active-proximamente-@1080.png" alt="active-comingSoon"/>
+          <img className="pageHeaderIconPhone" src="/resources/active-proximamente-phone-size.png"
+               alt="active-comingSoon"/>
 
-          <div className="comingSoon" id="comingSoon">
-              <link href="./stylesheets/comingSoon.css" rel="stylesheet"/>
-              <img className="pageHeaderIcon1080" src="/resources/active-proximamente-@1080.png" alt="active-comingSoon"/>
-              <img className="pageHeaderIconPhone" src="/resources/active-proximamente-phone-size.png" alt="active-comingSoon"/>
+          <div className="row1">
+              <div className="col-5">
+                  <a className="wspButton" href="https://api.whatsapp.com/send?phone=56927428466">
+                      <img className="wspButtonImage" src="/resources/wspSvg.png" alt="wspButton"/>
+                  </a>
+              </div>
           </div>
+
+      </div>
 
       </body>
       </html>
