@@ -1,3 +1,9 @@
+[class*="row"]{
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    top:78%;
+}
 
 
 @media only screen and (max-width:480px) {

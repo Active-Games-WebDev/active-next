@@ -1,0 +1,15 @@
+.control-ratio{
+    @media (max-aspect-ratio: 3/4) {
+
+    }
+    @media (min-aspect-ratio: 3/4) and (max-aspect-ratio: 1/1) {
+
+    }
+    @media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 4/3) {
+
+    }
+    @media (min-aspect-ratio: 4/3) {
+
+    }
+
+}

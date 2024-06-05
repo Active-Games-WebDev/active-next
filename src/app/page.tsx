@@ -1,45 +1,62 @@
 import React from "react";
-import Header from "./header/header";
-import ComingSoon from "./comingSoon/comingSoon";
 
 
+//next.js imports
+import Image from 'next/image';
 
-export default function App() {
-  return (
-      <html lang="en">
-      <head>
-          <meta charSet="utf-8"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          {
-              //anton ttf
-          }
-          <link rel="preconnect" href="https://fonts.googleapis.com"/>
-          <link rel="preconnect" href="https://fonts.gstatic.com"/>
-          <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
+//css imports
 
-          {
-              //avenir light
-          }
+//html imports
 
-          <link href="./src/app/resources/fonts/Avenir-Light.ttf" rel="font"/>
+export default function LandingPage(){
+    return(
+    <>
+        <section id="hero">
+            <h1>Compra aqui<br/>Todos los singles</h1>
+            <button>Buscar!</button>
+            <h2>BANNER</h2>
+        </section>
+        <section id="mas vendidos">
+            <div className="container">
+                <h2>Los mas vendidos</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, repellat blanditiis corporis nesciunt beatae minima
+                    officia at accusamus quo. Quidem exercitationem sequi in id aliquam error eligendi? Mollitia, odio animi!</p>
+            </div>
+        </section>
 
-          <link href="./src/app/resources/fonts/Avenir-Light.ttf" rel="stylesheet"/>
+        <section id="Nuestros productos">
+            <div className="container">
+                <h2>Nuestros productos</h2>
+                <div className="productos">Pokémon JCC</div>
+                <button>Ver más</button>
+                <div className="productos">Pokémon Center</div>
+                <button>Ver más</button>
+                <div className="productos">Star wars unlimited</div>
+                <button>Ver más</button>
+                <div className="productos">One Piece TCG</div>
+                <button>Ver más</button>
+                <div className="productos">Magic the Gatering</div>
+                <button>Ver más</button>
+                <div className="productos">Otros TCG</div>
+                <button>Ver más</button>
+                <div className="productos">Accesorios</div>
+                <button>Ver más</button>
+            </div>
+        </section>
 
-
-          <link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" rel="stylesheet"/>
-          {/*pure responsive*/}
-          <link href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" rel="stylesheet"/>
-          {/*pure grids responsive*/}
-          <link href="/stylesheets/globalGrid.css" rel="stylesheet"/>
-          <link href="/stylesheets/comingSoon.css" rel="stylesheet"/>
-
-
-      </head>
-      <body>
-      <ComingSoon/>
-
-      </body>
-      </html>
-  )
+        <section id="calendario de torneos">
+            <div className="container">
+                <h2>Proximos torneos</h2>
+                <div className="fecha">torneo 1</div>
+                <button>inscripcion</button>
+                <div className="fecha">torneo 2</div>
+                <button>inscripcion</button>
+                <div className="fecha">torneo 3</div>
+                <button>incripcion</button>
+                <div className="fecha">torneo 4</div>
+                <button>inscripcion</button>
+            </div>
+        </section>
+    </>
+    )
 }
-
